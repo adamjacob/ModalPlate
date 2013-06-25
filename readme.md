@@ -2,7 +2,7 @@ ModalPlate
 =========
 You define a new modal by extending the ModalPlate object, similar syntax to backbone.js.  ModalPlate comes with some basic CSS to get you started. *ModalPlate requires underscores.js.*
 
-> [v1.0]()
+> [v1.0](https://github.com/adamjacob/ModalPlate/archive/master.zip)
 
 ### Getting Started
 - Download Zip
