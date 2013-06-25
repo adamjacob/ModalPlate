@@ -1,3 +1,7 @@
+//	ModalPlate: Simple Modal Boxes :: https://github.com/adamjacob/ModalPlate
+//	MIT license http://www.opensource.org/licenses/mit-license.php/
+//	@author Adam Stanford :: www.adamstanford.net
+
 var ModalPlate = {
 
 	tagName: 'div',
