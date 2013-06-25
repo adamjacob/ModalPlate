@@ -1,0 +1,95 @@
+.ModalPlate_Box {
+
+	// Styling
+	background-color:#FFF;
+	border:#666 1px solid;
+	border-radius: 5px;
+	box-shadow: 0px 0px 6px rgba(0,0,0,0.3);
+	
+	// Sizing
+	min-height: 200px;
+	width: 500px;
+
+	// Positioning
+	position:absolute;
+	top: 50%; left: 50%;
+	margin-left: -250px;
+	margin-top: -100px;
+
+	h1 {
+
+		// Font
+		font-weight:normal;
+		font-size: 18pt;
+		color:#333;
+
+		// Resets
+		margin: 0px; padding:0px;
+
+		// Spacing
+		padding: 15px 25px 10px 25px;
+
+		// Styling
+		border-bottom:#CCC 1px solid;
+
+	}
+
+	p {
+
+		// Font
+		font-weight:normal;
+		font-size: 14pt;
+		color:#333;
+
+		// Resets
+		margin: 0px; padding:0px;
+
+		// Spacing
+		padding: 30px 25px 30px 25px;
+
+	}
+
+	button {
+
+		// Positioning
+		float:left;
+
+		// Sizing
+		width: 44%;
+
+		// Stop that weird highlight in webkit
+		outline:none;
+
+		// Styling
+		background-color:#EEE;
+		color:#333;
+		padding: 10px 0px 10px 0px;
+		border:#CCC 1px solid;
+		border-radius:5px;
+
+			&.button-hello {
+				background-color:#0D6CE0;
+				border-color:#0850A8;
+				color:#FFF;
+			}
+
+		&:first-of-type {
+			margin-left: 25px;
+			margin-right: 10px;
+		}
+
+	}
+
+}
+
+.alert-bg-cover {
+
+	// Positioning
+	position:absolute;
+	top:0px; left:0px;
+	right:0px; bottom:0px;
+
+	// Styling
+	background-color:rgba(0,0,0,0.5);
+
+}
