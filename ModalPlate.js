@@ -1,12 +1,8 @@
-//	ModalPlate: Simple Modal Boxes :: https://github.com/adamjacob/ModalPlate
-//	MIT license http://www.opensource.org/licenses/mit-license.php/
-//	@author Adam Stanford :: www.adamstanford.net
-
 var ModalPlate = {
 
 	tagName: 'div',
 
-	className: 'ModalPlate_Box',
+	className: 'popup',
 
 	markup: {
 
@@ -78,11 +74,16 @@ var ModalPlate = {
 		this.el.className = this.className;
 		this.el.innerHTML = _.template(this.markup.base, values);
 
-			_.each(this.events, function(value, key){
+		_.each(this.events, function(value, key){
 
-				var context = this;
+			var buttonEl = this.el.querySelector(this.markup.button_BaseClassName + key);
+			var context = this;
 
-				this.el.querySelector(this.markup.button_BaseClassName + key).onclick = function(){ value.call(context); };
+			if( _.isElement(buttonEl) ){
+
+				buttonEl.onclick = function(){ value.call(context); };
+
+			}
 
 		}, this);
 
